@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday, [Enter Name of your loved one]!</title>
+  <title>To Mumma</title>
 
   <!-- This script pulls in Tailwind CSS for styling -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -26,20 +26,44 @@
 <!-- Canvas for the falling cherry blossoms -->
 <canvas id="sakura-canvas"></canvas>
 
+<audio autoplay loop hidden>
+  <source src="img/music.mp3" type="audio/mpeg">
+</audio>
+
 <!-- Section 1: Hero Welcome -->
 <header class="h-screen relative flex items-center justify-center text-white overflow-hidden">
   <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
-    <source src="img/sa.mp4" type="video/mp4">
+    <source src="img/us2.mp4" type="video/mp4">
     Your browser does not support the video tag.
+    <!-- <iframe src="https://assets.pinterest.com/ext/embed.html?id=1084312047818988920" height="900" width="450" frameborder="0" scrolling="no" ></iframe> -->
+
   </video>
 
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
+  
   <div class="text-center z-10 p-4" data-aos="fade-in" data-aos-duration="1500">
-    <h1 class="text-5xl md:text-7xl font-anime drop-shadow-lg">Happy Birthday, [Enter Name of your loved one]!</h1>
-    <p class="mt-4 text-xl font-semibold">Celebrating a wonderful journey of...[in background you can add video or photos of your loved one]</p>
-    <div id="countdown" class="mt-6 text-2xl font-semibold tracking-widest leading-relaxed"></div>
-  </div>
+  <h1 class="text-5xl md:text-7xl font-anime drop-shadow-lg">
+    Happy Birthday, 
+    <span class="relative inline-block text-[#FFD166]">
+      Mumma
+      <svg 
+        class="absolute left-0 -bottom-3 w-full h-4" 
+        viewBox="0 0 200 20" 
+        preserveAspectRatio="none"
+      >
+        <path 
+          d="M2,12 Q60,20 140,10 T195,4" 
+          stroke="#FFD166" 
+          stroke-width="5" 
+          fill="none" 
+          stroke-linecap="round"
+        />
+      </svg>
+    </span>!
+  </p>
+  <p class="mt-4 text-xl font-semibold">This is to the most cutest , hottest , sexiest , tastiest person ever existed in the world and yea thats you.</p>
+</div>
 </header>
 
 <!-- Main Content -->
@@ -50,179 +74,29 @@
     <h2 class="text-4xl md:text-5xl font-anime text-sakura mb-8 drop-shadow-sm">A Special Message For You</h2>
     <div class="text-left text-lg leading-relaxed space-y-4 bg-white p-8 rounded-lg shadow-lg">
       <!-- TODO: Write your personal letter here -->
-      <p>Hey [Enter Name of your loved one],</p>
-      <p>Wish you a very Happy Birthday [Enter Name of your loved one]! May god fulfil all your wishes, you have an endless supply of happy days and your dreams turns into reality, A life surrounded with pets and life that will become a manga </p>
-      <p>Thankyou for always being so kind and reason behind everyone smile, Always connected to your roots , A true friend to everyone, You always be yourself and that's your vibe We all are very lucky, we are not in city of gems still we found a real gem.</p>
-      <p class="text-right mt-8">
-        Regards<br>
-      </p>
-    </div>
-  </section>
-
-  <!-- Section 3: The Timeline -->
-  <section class="my-16 md:my-24">
-    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">Your Story Arc</h2>
-    <div class="space-y-16">
-      <!-- Timeline Item 1 -->
-      <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
-        <!-- TODO: Replace with your photo -->
-        <img src="img/img1.png" alt="Add photo 1" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white"> <!--replce img1.png with name of your img-->
-        <div class="text-center md:text-left">
-          <!-- TODO: Customize the date and story -->
-          <h3 class="text-2xl font-anime text-sakura">Our first Meeting</h3>
-          <p class="mt-2 text-lg">Write your Story here</p>
-            <br>
-        </div>
-      </div>
-      <!-- Timeline Item 2 -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-left">
-        <!-- TODO: Replace with your photo -->
-        <img src="img/img2.png" alt="Add photo 2" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
-        <div class="text-center md:text-right">
-          <!-- TODO: Customize the date and story -->
-          <h3 class="text-2xl font-anime text-sakura">Part 2</h3>
-          <p class="mt-2 text-lg">Message 2</p>
-         <br>
-        </div>
-      </div>
-      <!-- Timeline Item 3 (NEW) -->
-      <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
-        <img src="img/img3.png" alt="Add photo 3" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
-        <div class="text-center md:text-left">
-          <h3 class="text-2xl font-anime text-sakura">Part3</h3>
-          <p class="mt-2 text-lg">Message3</p>
-         <br>
-        </div>
-      </div>
-      <!-- Timeline Item 4 (NEW) -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-left">
-        <img src="img/img4.png" alt="Add photo4" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
-        <div class="text-center md:text-right">
-          <h3 class="text-2xl font-anime text-sakura">Part 4</h3>
-          <p class="mt-2 text-lg">Message 4</p>
-            <br>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 4: Your Favourite Photos of your loved Ones (NEW SECTION) -->
-  <section class="my-16 md:my-24">
-    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">Hall of Fame</h2>
-    <div class="relative">
-      <!-- Scroll Buttons -->
-      <button id="scroll-left-btn" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 shadow-md transition-opacity opacity-0 md:opacity-100">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sakura" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
-      </button>
-      <button id="scroll-right-btn" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 shadow-md transition-opacity opacity-0 md:opacity-100">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sakura" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-      </button>
-
-      <!-- Scrollable Container -->
-      <div id="hall-of-fame-scroller" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide p-4 -mx-4">
-        <div class="flex snap-x snap-mandatory gap-8">
-          <!--  Card 1 -->
-          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="100">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/image1.png" alt="Photo 1" class="w-full h-80 object-cover rounded-md mb-4"> 
-              <h3 class="text-2xl font-anime text-sakura">Photo 1</h3>
-              <p class="mt-2">"Caption 1”"</p>
-            </div>
-          </div>
-          <!--  Card 2 -->
-          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="200">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/image2.png" alt="Photo 2" class="w-full h-80 object-cover rounded-md mb-4">
-              <h3 class="text-2xl font-anime text-sakura">Photo 2</h3>
-              <p class="mt-2">"Caption 2"</p>
-            </div>
-          </div>
-          <!--  Card 3 -->
-          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="300">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/image3.png" alt="Photo 3" class="w-full h-80 object-cover rounded-md mb-4">
-              <h3 class="text-2xl font-anime text-sakura">Photo 3</h3>
-              <p class="mt-2">"Caption 3"</p>
-            </div>
-          </div>
-          <!--  Card 4 -->
-          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="400">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/image4.png" alt="Photo 4" class="w-full h-80 object-cover rounded-md mb-4">
-              <h3 class="text-2xl font-anime text-sakura">Photo 4</h3>
-              <p class="mt-2">"Caption 4"</p>
-            </div>
-          </div>
-          <!--  Card 5 -->
-          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="500">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/image5.png" alt="Photo 5" class="w-full h-80 object-cover rounded-md mb-4">
-              <h3 class="text-2xl font-anime text-sakura">Photo 5</h3>
-              <p class="mt-2">"Caption 5"</p>
-            </div>
-          </div>
-          <!-- Card 6 -->
-          <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="600">
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/image6.png" alt="Photo 6" class="w-full h-80 object-cover rounded-md mb-4">
-              <h3 class="text-2xl font-anime text-sakura">Photo 6</h3>
-              <p class="mt-2">"Caption 6"</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 5: The Gallery -->
-  <section class="my-16 md:my-24">
-    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">The Y.V.A. Collection</h2>
-    <p class="text-center text-lg -mt-8 mb-12">(Your Very-own Adventures)</p>
-    <div id="lightgallery" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <a href="img/1.png" data-aos="zoom-in" class="block w-full h-48 md:h-64">
-        <img src="img/1.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 1">
-      </a>
-      <a href="img/2.png" data-aos="zoom-in" data-aos-delay="100" class="block w-full h-48 md:h-64">
-        <img src="img/2.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 2">
-      </a>
-      <a href="img/3.png" data-aos="zoom-in" data-aos-delay="200" class="block w-full h-48 md:h-64">
-        <img src="img/3.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 3">
-      </a>
-      <a href="img/4.png" data-aos="zoom-in" data-aos-delay="300" class="block w-full h-48 md:h-64">
-        <img src="img/4.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 4">
-      </a>
-      <!-- Second Row of Photos -->
-      <a href="img/5.png" data-aos="zoom-in" data-aos-delay="400" class="block w-full h-48 md:h-64">
-        <img src="img/5.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 5">
-      </a>
-      <a href="img/6.png" data-aos="zoom-in" data-aos-delay="500" class="block w-full h-48 md:h-64">
-        <img src="img/6.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 6">
-      </a>
-      <a href="img/7.png" data-aos="zoom-in" data-aos-delay="600" class="block w-full h-48 md:h-64">
-        <img src="img/7.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 7">
-      </a>
-      <a href="img/8.png" data-aos="zoom-in" data-aos-delay="700" class="block w-full h-48 md:h-64">
-        <img src="img/8.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 8">
-      </a>
-      <!-- Third Row of Photos -->
-      <a href="img/9.png" data-aos="zoom-in" data-aos-delay="800" class="block w-full h-48 md:h-64">
-        <img src="img/9.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 9">
-      </a>
-      <a href="img/10.png" data-aos="zoom-in" data-aos-delay="900" class="block w-full h-48 md:h-64">
-        <img src="img/10.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 10">
-      </a>
-      <a href="img/11.png" data-aos="zoom-in" data-aos-delay="1000" class="block w-full h-48 md:h-64">
-        <img src="img/11.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 11">
-      </a>
-      <a href="img/12.png" data-aos="zoom-in" data-aos-delay="1100" class="block w-full h-48 md:h-64">
-        <img src="img/12.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 12">
-      </a>
+      <p>Hey ,</p>
+      <p>A few years back i was just a normal shy boy vhi baaki bacho ki Tarah future life dreams , school ki teachers pae crush and apne boy gang me hi khush rehna .Ma bhen ke alawa kabhi kisi ladki ko aajtak chuaa tha nhi , lekin fir bhi pata nhi kyu man me tha ki gf toh zindagi me kabhi nhi banaunga . Everything seemed normal to me back then , but who knew it was soon gonna go full rolli-wooli in the some time . Back then when i met you on our first days everything felt different , it was like is she really the one who am i gonna be spending my rest of my life , with whom i am gonna be eating , sleeping , playing , zoning out , and literally everything joh ki i though its best suited to be done alone for me . I know it sounds like we are getting married or what....hahaha lol . But earlier all of it felt a no go for me but right now after all the time i have spent with you I thank you for coming into my life , i thank you for being such a kind and grateful , sexy person you are today .</p>
+      <p>There are doubts right you cant straightaway accept a stranger who you just met enter into your life , enter into your days , enter into your everyday thoughts , enter into your pants😆 but if you are the one , you are forever welcome sweetheart . We dont have much things in common,not the same kinda hobies and interests , we might not vibe to the same music not even to the same genre of movies (except superheros) , but i feel like if its with you i can get along with this uncommonness . I wanna spend the bestest funniest moments with you as well as the sad , boredom days too  .</p>
+      <p>Earlier i had read somewhere "LOVE IS LIKE FALLING OFF A CLIFF NOT KNOWING HOW DEEP THE FALL IS , IT CAN BE SCARY . SOME DONT CARE JUMPING AT ALL , WHILE SOME SPEND THEIR TIME ON THE EDGE THINKING WHETHER TO JUMP OR NOT . AFTER SOME TIME THEY GATHER ALL OF THEIR COURAGE AND TAKE A LEAP OF FAITH ONLY TO FIND OUT THERES MORE CLIFFS BELOW . WHO BLAME THEMSELVES FOR THE JUMP THEIR WOUNDS NEVER HEALS . YOU CAN JUMP AGAIN AND AGAIN AND AGAIN.........IT MAY NEVER END . SO WHY JUMP ? BECAUSE WHEN YOU JUMP IT MAY BE THE LAST ONE" You are that last cliff asmi and that was the last jump i made few months back . It was hurtful to you but i will be forever grateful for that chance . Never in my life i thought i will do such a thing , i was naive and i know you might not forgive me completely but its fine i will try my best to not repeat the same mistake i will learn from them . Because being happy isnt just the best part of love but also growing and learning about each other through our weaknesses is . I dont care now to everyone who thinks i did wrong coming back i did what my heart said i did what felt right to me . And if you or someone else thinks it will never be the same i will prove them wrong . i challenge them . i will . and its a promise i bet anyone challenge it .</p>
+      <p class="font-bold text-left">Love you</p>
     </div>
   </section>
 
     <!-- Section 6: Finale -->
     <section class="my-16 md:my-24" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-anime text-center mb-4">Happy Birthday [Enter Name of your loved one]</h2>
+        <h2 class="text-4xl md:text-5xl font-anime text-center mb-4">You are special</h2>
+        <div class="max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-navy">
+    </section>
+    <section class="my-16 md:my-24" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-anime text-center mb-4">You are the best</h2>
+        <div class="max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-navy">
+    </section>
+    <section class="my-16 md:my-24" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-anime text-center mb-4">You are deserving</h2>
+        <div class="max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-navy">
+    </section>
+    <section class="my-16 md:my-24" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-anime text-center mb-4">You mean the world to me</h2>
         <div class="max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-navy">
     </section>
 
@@ -230,8 +104,8 @@
 
 <!-- Footer -->
 <footer class="bg-navy text-white p-8 text-center">
-  <p>Enjoy your day to the fullest.</p>
-  <p class="text-sm opacity-70 mt-2">Hope you liked it...</p>
+  <p>Enjoy your life to the fullest.</p>
+  <p class="text-sm opacity-70 mt-2">If its related to you then everyday needs to be celebrated...</p>
 </footer>
 
 <!-- These scripts are for the animations and photo gallery -->
